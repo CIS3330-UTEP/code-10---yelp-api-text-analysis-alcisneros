@@ -1,0 +1,10 @@
+import pandas as pd
+import seaborn as sns
+import statsmodels.formula.api as sm_api
+import statsmodels.api as sm
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('cars_dataset(1).csv')
+
+
+df.groupby('Identification_Make').agg('mean')
